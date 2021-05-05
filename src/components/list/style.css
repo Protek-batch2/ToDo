@@ -1,0 +1,19 @@
+
+
+.table {
+  width: 400px;
+  border: 1px solid;
+  margin: 0 auto;
+}
+
+.task-col {
+  border: 1px solid;
+  width: 80%;
+  height: 40px;
+}
+
+.btn-col {
+  border: 1px solid;
+  width: 20%;
+  height: 40px;
+}
