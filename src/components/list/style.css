@@ -1,15 +1,19 @@
 
 
 .table {
-  width: 400px;
+  width: 800px;
   border: 1px solid;
   margin: 0 auto;
 }
 
-.task-col {
+.task-col, .date-col {
   border: 1px solid;
-  width: 80%;
+  width: 60%;
   height: 40px;
+}
+
+.date-col {
+  width: 20%;
 }
 
 .btn-col {

@@ -9,12 +9,14 @@ class List extends Component {
         <table className="table">
           <tr className="row">
             <th className="task-col">Task</th>
+            <th className="btn-col">Date</th>
             <th className="btn-col">Button</th>
           </tr>
           {this.props.list.map((ele, index) => {
             return (
               <tr className="row" key={index}>
-                <td className="task-col">{ele}</td>
+                <td className="task-col">{ele.task}</td>
+                <td className="date-col">{ele.date}</td>
                 <td className="btn-col">
                   <button onClick={() => this.props.delete(index)}>Delete</button>
                 </td>

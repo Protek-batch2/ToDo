@@ -8,7 +8,13 @@
   height: 32px;
 }
 
-.in{
+.in, .date-input{
   width: 180px;
   height: 32px;
+  margin: 4px;
 }
+
+.task{
+  margin: 8px;
+}
+
