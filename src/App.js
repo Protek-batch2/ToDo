@@ -7,10 +7,14 @@ class App extends Component {
   state = {
     inputValue: '',
     inputDate: '',
-    list: [
-      {task: 'car wash', date: '2021-05-30'},
-    ],
+    list: [],
     isError: false
+  }
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+    .then(result => result.json())
+    .then(data => this.setState({ list: data }))
   }
 
   updateInput = (event) => {
